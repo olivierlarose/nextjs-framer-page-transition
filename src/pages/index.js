@@ -1,9 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Curve from '@/components/Layout/Curve'
 
 export default function Home() {
   return (
@@ -14,101 +10,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+      <Curve backgroundColor={"#B0AD98"}>
+        <h1>Home</h1>
+        <div className='body'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet nibh sit amet velit dignissim, non tempus nisl pellentesque. Praesent sagittis magna sit amet ex blandit, id pharetra lectus feugiat. Praesent sit amet congue ipsum, in ultrices neque. In dapibus in purus vitae dignissim. Quisque molestie ullamcorper elementum. Sed sodales erat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet quis lectus vitae venenatis. Aliquam erat volutpat. Nulla maximus sodales nibh dapibus congue. Integer nec pharetra felis, quis commodo elit. Fusce et aliquet neque. Vivamus leo diam, pharetra ut lorem eu, suscipit egestas ipsum. Aenean mauris ligula, laoreet ut volutpat sit amet, convallis et turpis.</p>
+            <p>Quisque molestie ullamcorper elementum. Sed sodales erat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet quis lectus vitae venenatis. Aliquam erat volutpat. Nulla maximus sodales nibh dapibus congue. Integer nec pharetra felis, quis commodo elit. Fusce et aliquet neque. Vivamus leo diam, pharetra ut lorem eu, suscipit egestas ipsum. Aenean mauris ligula, laoreet ut volutpat sit amet, convallis et turpis.</p>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </Curve>
     </>
   )
 }

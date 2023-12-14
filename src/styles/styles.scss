@@ -1,0 +1,34 @@
+@import '../components/Layout/Stairs/styles.scss';
+@import '../components/Layout/Inner/style.scss';
+@import '../components/Layout/Curve/style.scss';
+
+.main{
+    .header{
+        display: flex;
+        gap: 15px;
+        padding: 40px;
+        height: 30px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .page{
+        padding: 40px;
+        min-height: calc(100vh - 80px);
+    }
+    h1{
+        margin-top: 50px;
+    }
+    .body{
+        display: flex;
+        gap: 40px;
+    }
+    
+}
